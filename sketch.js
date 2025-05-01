@@ -5,7 +5,7 @@ let r=200; let g=0;
 
 
 function setup() { 
-  createCanvas(windowWidth,windowHeight/1.5 + 200);
+  createCanvas(windowWidth,windowHeight/1.5);
   frameRate(60);
   count=0;
    
@@ -13,25 +13,9 @@ function setup() {
 
 function draw() {
 
- fill('blue');
-  stroke(0);
-  strokeWeight(2);
-  strokeCap(ROUND);
-rect(0,0,width,windowHeight/1.5);
+ background('blue');
  textX += moveX;
   textY += moveY;
-  
-
-square(windowWidth/2-125,windowHeight/1.5+50,20);
-  fill(200,200,220);
-  
-    square(windowWidth/2-75,windowHeight/1.5.1+50,20);
-     square(windowWidth/2-25,windowHeight/1.5.1+50,20);
-  square(windowWidth/2+25,windowHeight/1.5+50,20);
-  
-   square(windowWidth/2+75,windowHeight/1.5.1+50,20);
-   square(windowWidth/2+125,windowHeight/1.5.1+50,20); 
-   
 
   textFont('Ubuntu Mono');
   textAlign(CENTER);
@@ -44,10 +28,10 @@ square(windowWidth/2-125,windowHeight/1.5+50,20);
  
 
  if (textX > width-180 || textX < 180){
-   moveX *= -1; r=random(50,200); g=random(1,100);
+   moveX *= -1; r=random(50,200); g=random(50,100);
  }
   if (textY > windowHeight/1.5-25 || textY < 20){
-   moveY *= -1;r=random(50,200); g=random(1,100);
+   moveY *= -1;r=random(50,200); g=random(50,100);
  }
   
 
