@@ -21,6 +21,7 @@ function draw() {
   textAlign(CENTER);
   
    fill (r,g,255);
+  stroke(0); strokeWeight(2);
    textSize(40);
   text('under construction',textX,textY)
   textSize(12);
