@@ -5,7 +5,7 @@ let r=200; let g=0;
 
 
 function setup() { 
-  createCanvas(windowWidth,windowHeight/1.5);
+  createCanvas(windowWidth,windowHeight);
   frameRate(60);
   count=0;
    
@@ -31,7 +31,7 @@ function draw() {
  if (textX > width-180 || textX < 180){
    moveX *= -1; r=random(50,200); g=random(50,100);
  }
-  if (textY > windowHeight/1.5-25 || textY < 20){
+  if (textY > windowHeight-25 || textY < 20){
    moveY *= -1;r=random(50,200); g=random(50,100);
  }
   
