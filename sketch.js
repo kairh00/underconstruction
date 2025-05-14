@@ -29,10 +29,10 @@ function draw() {
  
 
  if (textX > width-180 || textX < 180){
-   moveX *= -1; r=random(50,200); g=random(50,100);
+   moveX *= -1; r=random(150,200); g=random(150,100);
  }
   if (textY > windowHeight-25 || textY < 20){
-   moveY *= -1;r=random(50,200); g=random(50,100);
+   moveY *= -1;r=random(150,200); g=random(150,100);
  }
   
 
